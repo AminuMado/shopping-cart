@@ -274,3 +274,60 @@ body {
     transform: rotateX(0deg) skewX(0deg);
   }
 }
+/* 
+========================
+      BUTTON SECTION
+======================== 
+*/
+
+.wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.landing-page button {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #e3d4d4;
+  border: 2px solid #d3caca;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  background: none;
+}
+
+.landing-page button span {
+  position: relative;
+  z-index: 2;
+}
+
+.landing-page button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(255, 3, 3);
+  transition: all 0.35s;
+}
+
+.landing-page button:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.landing-page button:active {
+  transform: scale(1.1);
+}
+
+.landing-page button:hover:after {
+  width: 100%;
+}
