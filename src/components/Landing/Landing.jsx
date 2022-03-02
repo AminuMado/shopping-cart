@@ -9,6 +9,11 @@ function Landing() {
         <div className="glow">JORDANS</div>
         <p className="subtitle">RETRO SHOP</p>
       </div>
+      <div className="wrapper">
+        <button>
+          <span>SHOP NOW</span>
+        </button>
+      </div>
     </div>
   );
 }
