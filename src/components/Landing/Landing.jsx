@@ -2,8 +2,13 @@ import "./Landing.css";
 function Landing() {
   return (
     <div className="landing-page">
-      <h1>Retro Shop</h1>
-      <button>Shop Now</button>
+      <div className="container">
+        <div className="glitch" data-text="JORDANS">
+          JORDANS
+        </div>
+        <div className="glow">JORDANS</div>
+        <p className="subtitle">RETRO SHOP</p>
+      </div>
     </div>
   );
 }
