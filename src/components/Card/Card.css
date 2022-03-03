@@ -1,5 +1,6 @@
 .card-container {
-  border: 1px solid black;
+  position: relative;
+  border: 1px solid gray;
   width: 270px;
   height: 325px;
   display: flex;
@@ -9,6 +10,7 @@
   background-color: whitesmoke;
   border-radius: 5px;
   margin: 5px;
+  transition: all 0.3s ease;
 }
 .card-container > img {
   max-width: 270px;
@@ -29,4 +31,26 @@
 .card-price {
   font-size: 25px;
   margin: 5px;
+}
+.card-recommended {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  pointer-events: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: inherit;
+}
+.card-container:hover {
+  cursor: pointer;
+  border-color: #000;
+  transform: translate(3px, -3px);
+  box-shadow: -2px 2px 0 #000;
 }
