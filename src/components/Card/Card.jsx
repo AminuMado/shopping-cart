@@ -1,5 +1,13 @@
 import "./Card.css";
+import shoe_src from "../../Pollen_1.jpg";
 function Card(props) {
-  return <h1>Hello Card</h1>;
+  return (
+    <div className="card-container">
+      <img src={shoe_src} alt="Jordans"></img>
+      <p className="card-name">Air Jordan 1s</p>
+      <p className="card-description">High Retro OG 'Pollen'</p>
+      <p className="card-price">$150</p>
+    </div>
+  );
 }
 export default Card;
