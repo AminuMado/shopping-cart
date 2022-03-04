@@ -1,7 +1,6 @@
 import "./Card.css";
 
 function Card(props) {
-  console.log(props);
   const { Name, Src, Price, Favorite } = props.shoe;
   return (
     <div className="card-container">
