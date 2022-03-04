@@ -137,7 +137,7 @@ const Shoe = [
       Black_Gym_Red_4_Src,
     ],
     Price: `$150`,
-    Favorite: false,
+    Favorite: true,
   },
   {
     Name: `High Retro OG 'Bloodline'`,
