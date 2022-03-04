@@ -183,7 +183,7 @@ const Shoe = [
     Favorite: false,
   },
   {
-    Name: `High Retro OG 'Court Purple'`,
+    Name: `High Zoom 'Court Purple'`,
     Src: Court_Purple_1_Src,
     Photos: [
       Court_Purple_1_Src,
@@ -371,6 +371,18 @@ const Shoe = [
       Yin_Yang_2b_Src,
       Yin_Yang_3b_Src,
       Yin_Yang_4b_Src,
+    ],
+    Price: `$150`,
+    Favorite: false,
+  },
+  {
+    Name: `High Zoom 'Zen Green'`,
+    Src: Zen_Green_1_Src,
+    Photos: [
+      Zen_Green_1_Src,
+      Zen_Green_2_Src,
+      Zen_Green_3_Src,
+      Zen_Green_4_Src,
     ],
     Price: `$150`,
     Favorite: false,
