@@ -7,12 +7,17 @@ import data from "./data";
 
 function App() {
   const [shoes, setShoes] = React.useState(data);
+  const [activeShoe, setActiveShoe] = React.useState(false);
 
   return (
     <div>
       {/* <Landing /> */}
       <Navbar></Navbar>
-      <Shop shoes={shoes} />
+      <Shop
+        shoes={shoes}
+        activeShoe={activeShoe}
+        setActiveShoe={setActiveShoe}
+      />
     </div>
   );
 }
