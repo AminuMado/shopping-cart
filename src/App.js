@@ -5,8 +5,8 @@ import Landing from "./components/Landing/Landing";
 import Navbar from "./components/Navbar/Navbar";
 import data from "./data";
 import Carousel from "./components/Carousel/Carousel";
-
-function App() {
+import { CarouselItem } from "./components/Carousel/Carousel";
+function App(props) {
   const [shoes, setShoes] = React.useState(data);
   const [activeShoe, setActiveShoe] = React.useState(false);
 
@@ -19,7 +19,11 @@ function App() {
         activeShoe={activeShoe}
         setActiveShoe={setActiveShoe}
       /> */}
-      <Carousel></Carousel>
+      <Carousel>
+        <CarouselItem> Item 1</CarouselItem>
+        <CarouselItem> Item 2</CarouselItem>
+        <CarouselItem> Item 3</CarouselItem>
+      </Carousel>
     </div>
   );
 }
