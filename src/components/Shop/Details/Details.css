@@ -30,6 +30,7 @@
   background: whitesmoke;
   color: #8a8a8a;
   opacity: 0;
+  padding-bottom: 5px;
 }
 .details.active {
   opacity: 1;
