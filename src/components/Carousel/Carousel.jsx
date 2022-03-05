@@ -1,5 +1,7 @@
 import React from "react";
 import "./Carousel.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 
 export function CarouselItem(props) {
   return (
@@ -43,6 +45,11 @@ function Carousel(props) {
         })}
       </div>
       <div className="indicators">
+        <FontAwesomeIcon
+          className="next-arrow"
+          icon={faArrowRightLong}
+          onClick={() => console.log("right clicked")}
+        />
         <button
           disabled={activeIndex >= numberOfChildren - 1 ? true : false}
           onClick={() => {
