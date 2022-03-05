@@ -4,6 +4,7 @@ import Shop from "./components/Shop/Shop";
 import Landing from "./components/Landing/Landing";
 import Navbar from "./components/Navbar/Navbar";
 import data from "./data";
+import Carousel from "./components/Carousel/Carousel";
 
 function App() {
   const [shoes, setShoes] = React.useState(data);
@@ -13,11 +14,12 @@ function App() {
     <div>
       {/* <Landing /> */}
       <Navbar></Navbar>
-      <Shop
+      {/* <Shop
         shoes={shoes}
         activeShoe={activeShoe}
         setActiveShoe={setActiveShoe}
-      />
+      /> */}
+      <Carousel></Carousel>
     </div>
   );
 }
