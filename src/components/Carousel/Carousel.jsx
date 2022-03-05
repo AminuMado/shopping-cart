@@ -1,7 +1,10 @@
 import React from "react";
 import "./Carousel.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowLeftLong,
+  faArrowRightLong,
+} from "@fortawesome/free-solid-svg-icons";
 
 export function CarouselItem(props) {
   return (
@@ -44,7 +47,7 @@ function Carousel(props) {
           return React.cloneElement(child, { width: "100%" });
         })}
       </div>
-      <div className="indicators">
+      <div className="navigation">
         <FontAwesomeIcon
           className={
             activeIndex >= numberOfChildren - 1 ? "hide" : "next-arrow"
@@ -52,15 +55,11 @@ function Carousel(props) {
           icon={faArrowRightLong}
           onClick={() => updateIndex(activeIndex + 1)}
         />
-
-        <button
-          disabled={activeIndex <= 0 ? true : false}
-          onClick={() => {
-            updateIndex(activeIndex - 1);
-          }}
-        >
-          Prev
-        </button>
+        <FontAwesomeIcon
+          className={activeIndex <= 0 ? "hide" : "prev-arrow"}
+          icon={faArrowLeftLong}
+          onClick={() => updateIndex(activeIndex - 1)}
+        />
       </div>
       <div className="dots-container">
         <div className="dots">
