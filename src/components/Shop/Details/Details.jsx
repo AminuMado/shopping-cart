@@ -4,8 +4,8 @@ import { CarouselItem } from "../../Carousel/Carousel";
 function Details(props) {
   const { handleClick, activeShoe } = props;
 
-  const photos = activeShoe.Photos.map((photo) => (
-    <CarouselItem>
+  const photos = activeShoe.Photos.map((photo, index) => (
+    <CarouselItem key={index}>
       <img src={photo} alt="Jordans"></img>
     </CarouselItem>
   ));
