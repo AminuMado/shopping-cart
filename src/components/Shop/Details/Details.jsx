@@ -10,16 +10,6 @@ function Details(props) {
       <img src={photo} alt="Jordans"></img>
     </CarouselItem>
   ));
-  //The code below generates a sizes container
-  const sizesArray = [10, 11, 12, 13, 14, 15];
-  const sizes = sizesArray.map((size, index) => {
-    return (
-      <label className="size-label" key={index}>
-        <input className="radio-btn" type="radio" value={size} name="size" />
-        {size}
-      </label>
-    );
-  });
   return (
     <div className="details-overlay active">
       <div className="details active">
@@ -30,16 +20,13 @@ function Details(props) {
             <p className="card-description">{activeShoe.Name}</p>
             <p className="card-price">{activeShoe.Price}</p>
           </div>
-          <div className="purchase-container">
-            <div className="sizes-container">{sizes}</div>
-            <button className="add-to-cart-btn">Add to Cart</button>
-          </div>
           <FontAwesomeIcon
             className="cancel-icon"
             icon={faX}
             onClick={() => handleClick(false)}
           />
         </div>
+        <button className="add-to-cart-btn">Add to Cart</button>
       </div>
     </div>
   );
