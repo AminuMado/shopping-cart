@@ -1,5 +1,6 @@
 import "./Details.css";
-
+import Carousel from "../../Carousel/Carousel";
+import { CarouselItem } from "../../Carousel/Carousel";
 function Details(props) {
   const { handleClick, activeShoe } = props;
 
