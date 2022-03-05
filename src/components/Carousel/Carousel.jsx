@@ -10,6 +10,17 @@ export function CarouselItem(props) {
 }
 function Carousel(props) {
   const [activeIndex, setActiveIndex] = React.useState(0);
+  const numberOfChildren = React.Children.count(props.children); // This counts the number of elements to be rendered in the carousel
+  function updateIndex(currentIndex) {
+    let newIndex;
+    if (currentIndex < 0) {
+      newIndex = 0;
+    } else if (currentIndex >= numberOfChildren) {
+      newIndex = numberOfChildren - 1;
+    } else newIndex = currentIndex;
+    setActiveIndex(newIndex);
+  }
+
   //This is function that takes photos and displays them
   //so it should depend on props which youll pass a list of photos and
   // it lines them up in a carousel
@@ -25,11 +36,29 @@ function Carousel(props) {
     <div className="carousel">
       <div
         className="inner"
-        style={{ trasform: `translateX(-${activeIndex * 100}%)` }}
+        style={{ transform: `translateX(-${activeIndex * 100}%)` }}
       >
         {React.Children.map(props.children, (child, index) => {
           return React.cloneElement(child, { width: "100%" });
         })}
+      </div>
+      <div className="indicators">
+        <button
+          disabled={activeIndex >= numberOfChildren - 1 ? true : false}
+          onClick={() => {
+            updateIndex(activeIndex + 1);
+          }}
+        >
+          Next
+        </button>
+        <button
+          disabled={activeIndex <= 0 ? true : false}
+          onClick={() => {
+            updateIndex(activeIndex - 1);
+          }}
+        >
+          Prev
+        </button>
       </div>
     </div>
   );
