@@ -121,7 +121,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -131,7 +130,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -146,7 +144,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: true,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -161,7 +158,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -171,7 +167,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -186,7 +181,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -201,7 +195,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -216,7 +209,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -231,7 +223,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -241,7 +232,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -256,7 +246,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -271,7 +260,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -281,7 +269,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -296,7 +283,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -306,7 +292,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -316,7 +301,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: true,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -331,7 +315,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -341,7 +324,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -356,7 +338,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -366,7 +347,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -381,7 +361,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -396,7 +375,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -411,7 +389,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -426,7 +403,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -436,7 +412,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -451,7 +426,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
   {
@@ -466,7 +440,6 @@ const Shoe = [
     Price: `$150`,
     Favorite: false,
     Quantity: null,
-    Size: null,
     id: nanoid(),
   },
 ];
