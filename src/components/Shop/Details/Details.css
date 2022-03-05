@@ -69,7 +69,7 @@
   display: flex;
   align-items: baseline;
   justify-content: space-around;
-  width: 65%;
+  width: 97%;
 }
 .add-to-cart-btn {
   display: block;
@@ -95,9 +95,32 @@
 .add-to-cart-btn:active {
   transform: scale(1.1);
 }
-
+.shoe-name {
+  font-size: 25px;
+  color: black;
+}
+.shoe-description {
+  font-size: 35px;
+  color: black;
+}
+.shoe-price {
+  font-size: 28px;
+  color: black;
+}
 @media only screen and (max-width: 700px) {
   .details img {
     transform: scale(0.5);
+  }
+  .shoe-name {
+    font-size: 17px;
+    color: black;
+  }
+  .shoe-description {
+    font-size: 20px;
+    color: black;
+  }
+  .shoe-price {
+    font-size: 17px;
+    color: black;
   }
 }
