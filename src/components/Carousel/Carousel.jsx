@@ -46,18 +46,13 @@ function Carousel(props) {
       </div>
       <div className="indicators">
         <FontAwesomeIcon
-          className="next-arrow"
+          className={
+            activeIndex >= numberOfChildren - 1 ? "hide" : "next-arrow"
+          }
           icon={faArrowRightLong}
-          onClick={() => console.log("right clicked")}
+          onClick={() => updateIndex(activeIndex + 1)}
         />
-        <button
-          disabled={activeIndex >= numberOfChildren - 1 ? true : false}
-          onClick={() => {
-            updateIndex(activeIndex + 1);
-          }}
-        >
-          Next
-        </button>
+
         <button
           disabled={activeIndex <= 0 ? true : false}
           onClick={() => {
