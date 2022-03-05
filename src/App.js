@@ -14,16 +14,11 @@ function App(props) {
     <div>
       {/* <Landing /> */}
       <Navbar></Navbar>
-      {/* <Shop
+      <Shop
         shoes={shoes}
         activeShoe={activeShoe}
         setActiveShoe={setActiveShoe}
-      /> */}
-      <Carousel>
-        <CarouselItem> Item 1</CarouselItem>
-        <CarouselItem> Item 2</CarouselItem>
-        <CarouselItem> Item 3</CarouselItem>
-      </Carousel>
+      />
     </div>
   );
 }
