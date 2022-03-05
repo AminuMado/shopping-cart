@@ -57,6 +57,21 @@
   cursor: pointer;
   opacity: 1;
 }
+.prev-arrow {
+  position: absolute;
+  bottom: 50%;
+  color: rgb(34, 32, 32);
+  font-size: 20px;
+  left: 3%;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.prev-arrow:hover {
+  transform: scale(1.4);
+  color: black;
+  cursor: pointer;
+  opacity: 1;
+}
 .hide {
   display: none;
 }
