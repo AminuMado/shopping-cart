@@ -12,9 +12,9 @@ function Details(props) {
   ));
   //The code below generates a sizes container
   const sizesArray = [10, 11, 12, 13, 14, 15];
-  const sizes = sizesArray.map((size) => {
+  const sizes = sizesArray.map((size, index) => {
     return (
-      <label>
+      <label className="size-label" key={index}>
         <input className="radio-btn" type="radio" value={size} name="size" />
         {size}
       </label>
