@@ -59,6 +59,17 @@ function Carousel(props) {
         >
           Prev
         </button>
+        <div className="container">
+          <div className="steps">
+            {React.Children.map(props.children, (child, index) => {
+              return (
+                <div
+                  className={index === activeIndex ? "step active" : "step"}
+                ></div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );
