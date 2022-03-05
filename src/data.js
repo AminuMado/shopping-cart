@@ -1,3 +1,4 @@
+import { nanoid } from "nanoid";
 import A_Star_is_Born_1_Src from "./Assets/Images/A_Star_is_Born_1.jpg";
 import A_Star_is_Born_2_Src from "./Assets/Images/A_Star_is_Born_2.jpg";
 import A_Star_is_Born_3_Src from "./Assets/Images/A_Star_is_Born_3.jpg";
@@ -119,6 +120,9 @@ const Shoe = [
     ],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'Barons'`,
@@ -126,6 +130,9 @@ const Shoe = [
     Photos: [Barons_1_Src, Barons_2_Src, Barons_3_Src, Barons_4_Src],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'Black_Gym_Red'`,
@@ -138,6 +145,9 @@ const Shoe = [
     ],
     Price: `$150`,
     Favorite: true,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'Bloodline'`,
@@ -150,6 +160,9 @@ const Shoe = [
     ],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'Bred'`,
@@ -157,6 +170,9 @@ const Shoe = [
     Photos: [Bred_1_Src, Bred_2_Src, Bred_3_Src, Bred_4_Src],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'City of Flight'`,
@@ -169,6 +185,9 @@ const Shoe = [
     ],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'Clay Green'`,
@@ -181,6 +200,9 @@ const Shoe = [
     ],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Zoom 'Court Purple'`,
@@ -193,6 +215,9 @@ const Shoe = [
     ],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'Dark Marina Blue'`,
@@ -205,6 +230,9 @@ const Shoe = [
     ],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'Gym Red'`,
@@ -212,6 +240,9 @@ const Shoe = [
     Photos: [Gym_Red_1_Src, Gym_Red_2_Src, Gym_Red_3_Src, Gym_Red_4_Src],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'Hyper Royal'`,
@@ -224,6 +255,9 @@ const Shoe = [
     ],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'NYC to Paris'`,
@@ -236,6 +270,9 @@ const Shoe = [
     ],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'Obsidian'`,
@@ -243,6 +280,9 @@ const Shoe = [
     Photos: [Obsidian_1_Src, Obsidian_2_Src, Obsidian_3_Src, Obsidian_4_Src],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'Pine Green 2.0'`,
@@ -255,6 +295,9 @@ const Shoe = [
     ],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'Pollen'`,
@@ -262,6 +305,9 @@ const Shoe = [
     Photos: [Pollen_1_Src, Pollen_2_Src, Pollen_3_Src, Pollen_4_Src],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'RE2PECT'`,
@@ -269,6 +315,9 @@ const Shoe = [
     Photos: [RE2PECT_1_Src, RE2PECT_2_Src, RE2PECT_3_Src, RE2PECT_4_Src],
     Price: `$150`,
     Favorite: true,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'Royal Toe'`,
@@ -281,6 +330,9 @@ const Shoe = [
     ],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'Shadow'`,
@@ -288,6 +340,9 @@ const Shoe = [
     Photos: [Shadow_1_Src, Shadow_2_Src, Shadow_3_Src, Shadow_4_Src],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'Tokyo Bio Hack'`,
@@ -300,6 +355,9 @@ const Shoe = [
     ],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'Top 3'`,
@@ -307,6 +365,9 @@ const Shoe = [
     Photos: [Top_3_1_Src, Top_3_2_Src, Top_3_3_Src, Top_3_4_Src],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'Volt Gold'`,
@@ -319,6 +380,9 @@ const Shoe = [
     ],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'White Elephant'`,
@@ -331,6 +395,9 @@ const Shoe = [
     ],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'White Shadow'`,
@@ -343,6 +410,9 @@ const Shoe = [
     ],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Retro OG 'World Championship'`,
@@ -355,6 +425,9 @@ const Shoe = [
     ],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `Retro High OG 'Yin Yang White'`,
@@ -362,6 +435,9 @@ const Shoe = [
     Photos: [Yin_Yang_1_Src, Yin_Yang_2_Src, Yin_Yang_3_Src, Yin_Yang_4_Src],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `Retro High OG 'Yin Yang Black'`,
@@ -374,6 +450,9 @@ const Shoe = [
     ],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
   {
     Name: `High Zoom 'Zen Green'`,
@@ -386,6 +465,9 @@ const Shoe = [
     ],
     Price: `$150`,
     Favorite: false,
+    Quantity: null,
+    Size: null,
+    id: nanoid(),
   },
 ];
 
