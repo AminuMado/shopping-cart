@@ -9,6 +9,7 @@ import { CarouselItem } from "./components/Carousel/Carousel";
 function App(props) {
   const [shoes, setShoes] = React.useState(data);
   const [activeShoe, setActiveShoe] = React.useState(false);
+  const [cartItems, setCartItems] = React.useState([]);
 
   return (
     <div>
@@ -18,6 +19,7 @@ function App(props) {
         shoes={shoes}
         activeShoe={activeShoe}
         setActiveShoe={setActiveShoe}
+        setCartItems={setCartItems}
       />
     </div>
   );
