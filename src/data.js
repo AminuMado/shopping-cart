@@ -268,7 +268,7 @@ const Shoe = [
     Src: RE2PECT_1_Src,
     Photos: [RE2PECT_1_Src, RE2PECT_2_Src, RE2PECT_3_Src, RE2PECT_4_Src],
     Price: `$150`,
-    Favorite: false,
+    Favorite: true,
   },
   {
     Name: `High Retro OG 'Royal Toe'`,
