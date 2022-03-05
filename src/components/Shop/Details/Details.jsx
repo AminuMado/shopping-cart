@@ -16,9 +16,9 @@ function Details(props) {
         <Carousel>{photos}</Carousel>
         <div className="info-container">
           <div className="shoe-information">
-            <p className="card-name">Air Jordan 1s</p>
-            <p className="card-description">{activeShoe.Name}</p>
-            <p className="card-price">{activeShoe.Price}</p>
+            <p className="shoe-name">Air Jordan 1s</p>
+            <p className="shoe-description">{activeShoe.Name}</p>
+            <p className="shoe-price">{activeShoe.Price}</p>
           </div>
           <FontAwesomeIcon
             className="cancel-icon"
