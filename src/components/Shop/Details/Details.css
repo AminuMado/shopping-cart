@@ -107,6 +107,24 @@
   font-size: 28px;
   color: black;
 }
+/* Pop up Modal Section */
+.pop-up-modal {
+  display: flex;
+  font-size: 30px;
+  position: fixed;
+  top: 8%;
+  right: 1%;
+  padding: 5px;
+  gap: 5px;
+  color: black;
+  transition: all 1s;
+}
+
+.check-icon {
+  background-color: greenyellow;
+  border-radius: 50%;
+}
+/* Media Queries */
 @media only screen and (max-width: 700px) {
   .details img {
     transform: scale(0.5);
