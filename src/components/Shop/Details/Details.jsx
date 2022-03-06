@@ -59,10 +59,7 @@ function Details(props) {
             onClick={() => setActiveShoe(false)}
           />
         </div>
-        <button
-          className="add-to-cart-btn"
-          onClick={() => addToCart(activeShoe)}
-        >
+        <button className="add-to-cart-btn" onClick={() => addToCart()}>
           Add to Cart
         </button>
         {modal && (
