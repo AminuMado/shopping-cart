@@ -19,6 +19,7 @@ function App(props) {
         shoes={shoes}
         activeShoe={activeShoe}
         setActiveShoe={setActiveShoe}
+        cartItems={cartItems}
         setCartItems={setCartItems}
       />
     </div>
