@@ -1,6 +1,7 @@
 import "./Checkout.css";
+import Card from "./Card/Card";
 function Checkout(props) {
-  return <h1>Hello Checkout</h1>;
+  return <Card />;
 }
 
 export default Checkout;
