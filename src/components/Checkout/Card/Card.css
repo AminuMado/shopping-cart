@@ -57,3 +57,43 @@
 .trash-icon:active {
   transform: scale(1.1);
 }
+
+/* Media Queries */
+@media only screen and (max-width: 700px) {
+  .checkout-card-container {
+    position: relative;
+    border: 1px solid gray;
+    width: 270px;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin: 5px;
+    transition: all 0.3s ease;
+    color: black;
+  }
+  .checkout-card-container > img {
+    max-width: 270px;
+    min-width: 200px;
+    border-radius: 5px;
+  }
+
+  .checkout-card-name {
+    align-self: baseline;
+    margin: 5px;
+  }
+
+  .checkout-card-price {
+    margin: 5px;
+  }
+
+  .checkout-card-container:hover {
+    cursor: pointer;
+    border-color: #000;
+    transform: translate(3px, -3px);
+    box-shadow: -2px 2px 0 #000;
+  }
+}
