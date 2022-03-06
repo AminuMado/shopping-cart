@@ -1,4 +1,7 @@
 import "./Card.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
+
 import photo from "../../../Assets/Images/Zen_Green_1.jpg";
 function Card(props) {
   return (
@@ -7,9 +10,10 @@ function Card(props) {
       <div className="checkout-card-details">
         <p className="checkout-card-name">Air Jordan 1s</p>
         <p className="checkout-card-description">Zen Green</p>
-        <p className="checkout-card-quantity">2</p>
-        <p className="checkout-card-price">$250</p>
+        <p className="checkout-card-quantity">Quantity:2</p>
+        <p className="checkout-card-price">Price:$250 vat included</p>
       </div>
+      <FontAwesomeIcon className="trash-icon" icon={faTrashCan} />
     </div>
   );
 }
