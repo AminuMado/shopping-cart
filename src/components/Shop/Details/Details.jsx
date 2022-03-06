@@ -4,7 +4,7 @@ import Carousel from "../../Carousel/Carousel";
 import { CarouselItem } from "../../Carousel/Carousel";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 function Details(props) {
-  const { handleClick, activeShoe, setCartItems } = props;
+  const { setActiveShoe, activeShoe, setCartItems } = props;
   const photos = activeShoe.Photos.map((photo, index) => (
     <CarouselItem key={index}>
       <img src={photo} alt="Jordans"></img>
@@ -29,7 +29,7 @@ function Details(props) {
           <FontAwesomeIcon
             className="cancel-icon"
             icon={faX}
-            onClick={() => handleClick(false)}
+            onClick={() => setActiveShoe(false)}
           />
         </div>
         <button className="add-to-cart-btn">Add to Cart</button>
