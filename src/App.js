@@ -15,14 +15,14 @@ function App(props) {
     <div>
       {/* <Landing /> */}
       <Navbar></Navbar>
-      {/* <Shop
+      <Shop
         shoes={shoes}
         activeShoe={activeShoe}
         setActiveShoe={setActiveShoe}
         cartItems={cartItems}
         setCartItems={setCartItems}
-      /> */}
-      <Checkout />
+      />
+      <Checkout cartItems={cartItems} setCartItems={setCartItems} />
     </div>
   );
 }
