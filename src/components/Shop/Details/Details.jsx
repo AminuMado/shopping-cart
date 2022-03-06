@@ -3,8 +3,10 @@ import "./Details.css";
 import Carousel from "../../Carousel/Carousel";
 import { CarouselItem } from "../../Carousel/Carousel";
 import { faX } from "@fortawesome/free-solid-svg-icons";
-
+import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
+import React from "react";
 function Details(props) {
+  const [modal, setModal] = React.useState(false);
   const { setActiveShoe, activeShoe, cartItems, setCartItems } = props;
   const photos = activeShoe.Photos.map((photo, index) => (
     <CarouselItem key={index}>
@@ -37,8 +39,8 @@ function Details(props) {
       const newShoe = { ...activeShoe, Quantity: prevQuantity + 1 };
       setCartItems([...cartItems, newShoe]);
     }
-    console.log(cartItems);
-    setActiveShoe(false);
+    setModal(true);
+    setTimeout(() => setModal(false), 1000);
   }
 
   return (
@@ -63,6 +65,16 @@ function Details(props) {
         >
           Add to Cart
         </button>
+        {modal && (
+          <div className="pop-up-modal">
+            <FontAwesomeIcon
+              className="check-icon"
+              icon={faCircleCheck}
+              onClick={() => setActiveShoe(false)}
+            />
+            <p>Added to Cart</p>
+          </div>
+        )}
       </div>
     </div>
   );
