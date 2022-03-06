@@ -8,10 +8,9 @@ function Card(props) {
     <div className="checkout-card-container">
       <img src={photo} alt="Jordans"></img>
       <div className="checkout-card-details">
-        <p className="checkout-card-name">Air Jordan 1s</p>
-        <p className="checkout-card-description">Zen Green</p>
-        <p className="checkout-card-quantity">Quantity:2</p>
-        <p className="checkout-card-price">Price:$250 vat included</p>
+        <h3 className="checkout-card-name">Zen Green</h3>
+        <p className="checkout-card-quantity">{`Quantity: 2`}</p>
+        <p className="checkout-card-price">Price: $250 VAT included</p>
       </div>
       <FontAwesomeIcon className="trash-icon" icon={faTrashCan} />
     </div>
