@@ -2,7 +2,7 @@ import Card from "./Card/Card";
 import Details from "./Details/Details";
 import "./Shop.css";
 function Shop(props) {
-  const { shoes, activeShoe, setActiveShoe, setCartItems } = props;
+  const { shoes, activeShoe, setActiveShoe, cartItems, setCartItems } = props;
   const Shoes = shoes.map((shoe, index) => (
     <Card shoe={shoe} key={index} handleClick={setActiveShoe} />
   ));
@@ -11,7 +11,8 @@ function Shop(props) {
       {activeShoe && (
         <Details
           activeShoe={activeShoe}
-          handleClick={setActiveShoe}
+          setActiveShoe={setActiveShoe}
+          cartItems={cartItems}
           setCartItems={setCartItems}
         />
       )}
