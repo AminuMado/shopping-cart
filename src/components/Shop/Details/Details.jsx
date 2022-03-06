@@ -13,7 +13,7 @@ function Details(props) {
       <img src={photo} alt="Jordans"></img>
     </CarouselItem>
   ));
-  function addToCart(shoe) {
+  function addToCart() {
     //if shoe exists in the cart
     // increase its quantity
     // if it doesnt just add it to the cart
