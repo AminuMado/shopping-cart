@@ -7,18 +7,20 @@ function Summary(props) {
       <div class="cart-page-summary-info">
         <span class="cart-page-summary-info-left">
           <strong>Subtotal:</strong>
+          <p>300 Items</p>
         </span>
         <span class="cart-page-summary-info-right">$0.00</span>
       </div>
       <div class="cart-page-summary-info">
         <span class="cart-page-summary-info-left">
           <strong>Shipping:</strong>
+          <p class="free-shipping" id="free-shipping">
+            (free shipping on orders over $150!)
+          </p>
         </span>
         <span class="cart-page-summary-info-right">$0.00</span>
       </div>
-      <span class="free-shipping" id="free-shipping">
-        (free shipping on orders over $150!)
-      </span>
+
       <div class="cart-page-summary-info overline">
         <span class="cart-page-summary-info-left">
           <strong>Total:</strong>
