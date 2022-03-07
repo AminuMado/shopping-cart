@@ -6,3 +6,8 @@
   padding: 7px;
   width: 357px;
 }
+.cart-page-summary-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
