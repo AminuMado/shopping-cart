@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
 function Card(props) {
-  const { Name, Src, Price, Quantity } = props.shoe;
-  const { cartItems, setCartItems } = props;
+  const { cartItems, setCartItems, shoe } = props;
+  const { Name, Src, Price, Quantity } = shoe;
   function deleteItem(shoe) {
     const newCartItems = cartItems.filter((item) => item.id !== shoe.id);
     setCartItems(newCartItems);
@@ -20,7 +20,7 @@ function Card(props) {
       <FontAwesomeIcon
         className="trash-icon"
         icon={faTrashCan}
-        onClick={() => deleteItem(props.shoe)}
+        onClick={() => deleteItem(shoe)}
       />
     </div>
   );
