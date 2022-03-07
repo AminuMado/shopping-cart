@@ -1,12 +1,17 @@
 import "./Summary.css";
 function Summary(props) {
+  const { cartItems } = props;
+  let count = 0;
+  cartItems.forEach((item) => {
+    count = count + item.Quantity;
+  });
   return (
     <div className="cart-page-summary-container">
       <h1>Order Summary</h1>
       <div className="cart-page-summary-info">
         <span className="cart-page-summary-info-left">
           <strong>Subtotal:</strong>
-          <p>300 Items</p>
+          <p>{count} Items</p>
         </span>
         <span className="cart-page-summary-info-right">$0.00</span>
       </div>
