@@ -14,3 +14,28 @@
 .free-shipping {
   font-size: 15px;
 }
+.checkout-btn {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: black;
+  border: 2px solid rgb(19, 18, 18);
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  background: white;
+  align-self: center;
+}
+.checkout-btn:hover {
+  color: #fff;
+  cursor: pointer;
+  background: black;
+}
+.checkout-btn:active {
+  transform: scale(1.1);
+}
