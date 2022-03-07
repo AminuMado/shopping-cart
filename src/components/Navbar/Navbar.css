@@ -38,3 +38,6 @@ ul li:hover {
   font-style: normal;
   font-size: x-small;
 }
+.shopping-cart-items-count.zero {
+  display: none;
+}
