@@ -15,7 +15,7 @@ function Checkout(props) {
     <div className="checkout-container">
       <h1>My Cart</h1>
       <div>{shoes}</div>
-      <Summary />
+      <Summary cartItems={cartItems} />
     </div>
   );
 }
