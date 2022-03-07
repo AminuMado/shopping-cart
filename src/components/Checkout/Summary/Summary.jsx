@@ -3,7 +3,6 @@ function Summary(props) {
   return (
     <div className="cart-page-summary-container">
       <h1>Order Summary</h1>
-      <span className="cart-page-item-subinfo-detail">0 items</span>
       <div className="cart-page-summary-info">
         <span className="cart-page-summary-info-left">
           <strong>Subtotal:</strong>
@@ -14,7 +13,7 @@ function Summary(props) {
       <div className="cart-page-summary-info">
         <span className="cart-page-summary-info-left">
           <strong>Shipping:</strong>
-          <p className="free-shipping">(free shipping on orders over $150!)</p>
+          <p className="free-shipping">(free shipping on orders over $500!)</p>
         </span>
         <span className="cart-page-summary-info-right">$0.00</span>
       </div>
@@ -27,7 +26,9 @@ function Summary(props) {
           <strong>$0.00</strong>
         </span>
       </div>
-      <button className="checkout-btn">checkout</button>
+      <button className="checkout-btn">
+        <span>CHECKOUT</span>
+      </button>
     </div>
   );
 }
