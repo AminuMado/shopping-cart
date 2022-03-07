@@ -3,8 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
 function Card(props) {
-  const { Name, Src, Price, Quantity, Id } = props.shoe;
-  function deleteItem() {}
+  const { Name, Src, Price, Quantity } = props.shoe;
+  const { cartItems, setCartItems } = props;
+  function deleteItem(shoe) {
+    const newCartItems = cartItems.filter((item) => item.id !== shoe.id);
+    setCartItems(newCartItems);
+  }
   return (
     <div className="checkout-card-container">
       <img src={Src} alt="Jordans"></img>
@@ -13,7 +17,11 @@ function Card(props) {
         <p className="checkout-card-quantity">{`Quantity: ${Quantity}`}</p>
         <p className="checkout-card-price">{`Price: ${Price} VAT included`}</p>
       </div>
-      <FontAwesomeIcon className="trash-icon" icon={faTrashCan} />
+      <FontAwesomeIcon
+        className="trash-icon"
+        icon={faTrashCan}
+        onClick={() => deleteItem(props.shoe)}
+      />
     </div>
   );
 }
