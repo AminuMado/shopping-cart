@@ -1,0 +1,8 @@
+.cart-page-summary-container {
+  border: 2px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 7px;
+  width: 357px;
+}
