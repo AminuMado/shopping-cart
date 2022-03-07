@@ -14,7 +14,7 @@ function App(props) {
   return (
     <div>
       {/* <Landing /> */}
-      <Navbar></Navbar>
+      <Navbar cartItems={cartItems}></Navbar>
       <Shop
         shoes={shoes}
         activeShoe={activeShoe}
