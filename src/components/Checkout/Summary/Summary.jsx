@@ -49,7 +49,7 @@ function Summary(props) {
         <span className="cart-page-summary-info-right">${shipping}</span>
       </div>
 
-      <div className="cart-page-summary-info overline">
+      <div className="cart-page-summary-info">
         <span className="cart-page-summary-info-left">
           <strong>Total:</strong>
         </span>
