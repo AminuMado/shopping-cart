@@ -6,6 +6,15 @@
   padding: 20px;
   width: 340px;
 }
+.cart-page-summary-container {
+  border: 2px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  width: 340px;
+  height: 385px;
+}
 .cart-page-summary-info {
   display: flex;
   justify-content: space-between;
@@ -39,6 +48,7 @@
 .checkout-btn:active {
   transform: scale(1.1);
 }
+
 @media only screen and (max-width: 700px) {
   .cart-page-summary-container {
     transform: scale(0.8);
