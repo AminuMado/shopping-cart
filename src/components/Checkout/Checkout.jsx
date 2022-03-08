@@ -11,14 +11,22 @@ function Checkout(props) {
       setCartItems={setCartItems}
     />
   ));
+  let renderCart = false;
+
+  renderCart = cartItems.length > 0 ? true : false;
   return (
-    <div className="checkout-container">
-      <div>
-        <h1>My Cart</h1>
-        <div>{shoes}</div>
+    (!renderCart && (
+      <div className="checkout-container"> show kdfeifeijfeikdjfkdme</div>
+    )) ||
+    (renderCart && (
+      <div className="checkout-container">
+        <div>
+          <h1>My Cart</h1>
+          <div className="checkout-shoes-container">{shoes}</div>
+        </div>
+        <Summary cartItems={cartItems} />
       </div>
-      <Summary cartItems={cartItems} />
-    </div>
+    ))
   );
 }
 export default Checkout;
