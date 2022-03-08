@@ -1,6 +1,7 @@
 import "./Checkout.css";
 import Card from "./Card/Card";
 import Summary from "./Summary/Summary";
+import emptyCart_Src from "../../Assets/Images/Empty_Cart.gif";
 function Checkout(props) {
   const { cartItems, setCartItems } = props;
   const shoes = cartItems.map((shoe, index) => (
@@ -16,7 +17,9 @@ function Checkout(props) {
   renderCart = cartItems.length > 0 ? true : false;
   return (
     (!renderCart && (
-      <div className="checkout-container"> show kdfeifeijfeikdjfkdme</div>
+      <div className="empty-cart-container">
+        <img src={emptyCart_Src} alt="empty cart"></img>
+      </div>
     )) ||
     (renderCart && (
       <div className="checkout-container">
