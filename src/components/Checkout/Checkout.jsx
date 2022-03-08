@@ -13,8 +13,10 @@ function Checkout(props) {
   ));
   return (
     <div className="checkout-container">
-      <h1>My Cart</h1>
-      <div>{shoes}</div>
+      <div>
+        <h1>My Cart</h1>
+        <div>{shoes}</div>
+      </div>
       <Summary cartItems={cartItems} />
     </div>
   );
