@@ -1,14 +1,24 @@
-/* Media Queries */
 .checkout-container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
   padding: 30px;
 }
-@media only screen and (max-width: 700px) {
+
+.checkout-shoes-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+/* Media Queries */
+@media only screen and (max-width: 1000px) {
   .checkout-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
   }
 }
