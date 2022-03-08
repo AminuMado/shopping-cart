@@ -7,7 +7,7 @@ import data from "./data";
 import Checkout from "./components/Checkout/Checkout";
 
 function App(props) {
-  const [shoes, setShoes] = React.useState(data);
+  const shoes = data;
   const [activeShoe, setActiveShoe] = React.useState(false);
   const [cartItems, setCartItems] = React.useState([]);
 
