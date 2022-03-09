@@ -1,5 +1,6 @@
 import Card from "./Card/Card";
 import "./Shop.css";
+
 function Shop({ items }) {
   const Shoes = items.map((shoe, index) => <Card {...shoe} key={index} />);
   return (
