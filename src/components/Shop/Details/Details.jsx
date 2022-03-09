@@ -1,6 +1,6 @@
 import "./Details.css";
 import React from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Carousel from "../../Carousel/Carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CarouselItem } from "../../Carousel/Carousel";
@@ -9,7 +9,7 @@ import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
 function Details({ item, addToCart }) {
   const [modal, setModal] = React.useState(false);
   const [showCompleteOrder, setShowCompleteOrder] = React.useState(false);
-  const { goBack } = useHistory();
+  const { goBack } = useNavigate();
 
   const handleAdd = () => {
     setModal(true);
