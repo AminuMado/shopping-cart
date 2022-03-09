@@ -42,10 +42,8 @@ function App() {
       <React.Fragment>
         <Navbar cartItemsQuantity={cartItemsQuantity} />
         <Routes>
-          <Route path="/" element={Landing} />
-          <Route path="/shop">
-            <Shop items={data} />
-          </Route>
+          <Route path="/" element={<Landing />} />
+          <Route path="/shop" element={<Shop items={data} />} />
           <Route
             path="/shop/:id"
             render={(routeProps) => (
@@ -55,7 +53,7 @@ function App() {
               />
             )}
           />
-          <Route path="/cart">
+          <Route exact path="/cart">
             <Cart
               items={cartItems}
               deleteCartItem={deleteCartItem}
