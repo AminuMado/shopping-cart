@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import data from "./data";
 import Navbar from "./components/Navbar/Navbar";
 import Shop from "./components/Shop/Shop";
@@ -41,27 +41,28 @@ function App() {
     <HashRouter basename="/">
       <React.Fragment>
         <Navbar cartItemsQuantity={cartItemsQuantity} />
-
-        <Route path="/" element={Landing} />
-        <Route path="/shop">
-          <Shop items={data} />
-        </Route>
-        <Route
-          path="/shop/:id"
-          render={(routeProps) => (
-            <Item
-              item={findItem(routeProps.match.params.id)}
-              addToCart={addToCart}
-            />
-          )}
-        />
-        <Route path="/cart">
-          <Cart
-            items={cartItems}
-            deleteCartItem={deleteCartItem}
-            changeQuantity={changeQuantity}
+        <Routes>
+          <Route path="/" element={Landing} />
+          <Route path="/shop">
+            <Shop items={data} />
+          </Route>
+          <Route
+            path="/shop/:id"
+            render={(routeProps) => (
+              <Item
+                item={findItem(routeProps.match.params.id)}
+                addToCart={addToCart}
+              />
+            )}
           />
-        </Route>
+          <Route path="/cart">
+            <Cart
+              items={cartItems}
+              deleteCartItem={deleteCartItem}
+              changeQuantity={changeQuantity}
+            />
+          </Route>
+        </Routes>
       </React.Fragment>
     </HashRouter>
   );
