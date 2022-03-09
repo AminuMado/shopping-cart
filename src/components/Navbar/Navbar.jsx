@@ -1,33 +1,35 @@
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
-function Navbar(props) {
-  const { cartItems } = props;
-  const cartTotalItems = cartItems
-    .map((item) => parseInt(item.Quantity))
-    .reduce((previousValue, currentValue) => previousValue + currentValue, 0);
-
+function Navbar({ cartItemsQuantity }) {
   return (
-    <div className="navbar-container">
+    <nav className="navbar-container">
       <ul>
-        <li className="title">Retro Shop</li>
-        <li className="shop">Shop</li>
-        <li className="about">About</li>
-        <li className="shopping-cart-container">
-          <FontAwesomeIcon className="shopping-cart" icon={faCartShopping} />
-          <div
-            className={
-              cartTotalItems > 0
-                ? "shopping-cart-items-count"
-                : "shopping-cart-items-count zero"
-            }
-          >
-            {cartTotalItems}
-          </div>
-        </li>
+        <Link to="/">
+          <li className="title">Retro Shop</li>
+        </Link>
+        <Link to="/shop">
+          <li className="shop">Shop</li>
+        </Link>
+        <Link to="/cart">
+          <li className="shopping-cart-container">
+            <FontAwesomeIcon className="shopping-cart" icon={faCartShopping} />
+            <span
+              className={
+                cartItemsQuantity > 0
+                  ? "shopping-cart-items-count"
+                  : "shopping-cart-items-count zero"
+              }
+            >
+              {cartItemsQuantity}
+            </span>
+          </li>
+        </Link>
       </ul>
-    </div>
+    </nav>
   );
 }
+
 export default Navbar;
