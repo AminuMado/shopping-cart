@@ -5,7 +5,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Shop from "./components/Shop/Shop";
 import Cart from "./components/Cart";
 import Landing from "./components/Landing/Landing";
-import Item from "./components/Item";
+
+import Details from "./components/Shop/Details/Details";
 
 function App() {
   const [cartItems, setCartItems] = React.useState([]);
@@ -49,7 +50,7 @@ function App() {
           <Route
             path="/shop/:id"
             render={(routeProps) => (
-              <Item
+              <Details
                 item={findItem(routeProps.match.params.id)}
                 addToCart={addToCart}
               />
