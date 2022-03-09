@@ -1,8 +1,6 @@
 import "./Card.css";
 import { Link } from "react-router-dom";
-function Card(props) {
-  const { Name, Src, Price, Favorite, id } = props.shoe;
-
+function Card({ Name, Src, Price, Favorite, id }) {
   return (
     <Link to={`/shop/${id}`}>
       <div className="card-container">
