@@ -6,7 +6,8 @@ import Shop from "./components/Shop/Shop";
 import Cart from "./components/Cart/Cart";
 import Landing from "./components/Landing/Landing";
 import Details from "./components/Shop/Details/Details";
-import Test from "./test";
+import "./App.css";
+
 function App() {
   const [cartItems, setCartItems] = React.useState([]);
   const addToCart = (newItem) => {
@@ -25,7 +26,7 @@ function App() {
   const changeQuantity = (id, count) =>
     setCartItems(
       cartItems.map((item) =>
-        item.id === id ? { ...item, qty: item.qty + count } : item
+        item.id === id ? { ...item, Quantity: item.Quantity + count } : item
       )
     );
   const findItem = (id) => data.find((item) => item.id === id);
