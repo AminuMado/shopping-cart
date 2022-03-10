@@ -1,7 +1,6 @@
 import "./CartItem.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 
 function CartItem({
   id,
@@ -19,9 +18,7 @@ function CartItem({
     <div className="cart-item-container">
       <img src={Src} alt="Jordans"></img>
       <div className="cart-item-details">
-        <Link to={`/shop/${id}`}>
-          <h3 className="cart-item-name">{Name}</h3>{" "}
-        </Link>
+        <h3 className="cart-item-name">{Name}</h3>{" "}
         <p className="cart-item-quantity">
           {`Quantity: ${Quantity}`}
           <div className="quantity-btns-container">
