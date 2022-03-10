@@ -36,7 +36,6 @@ function CartItem({
         <button onClick={handleDecrease} disabled={Quantity < 2}>
           -
         </button>
-        <span>{Quantity}</span>
         <button onClick={handleIncrease}>+</button>
       </div>
     </div>
