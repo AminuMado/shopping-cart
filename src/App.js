@@ -41,26 +41,38 @@ function App() {
   return (
     <HashRouter basename="/">
       <React.Fragment>
-        <Navbar cartItemsQuantity={cartItemsQuantity} />
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/shop" element={<Shop items={data} />} />
+          <Route
+            path="/shop"
+            element={
+              <>
+                <Navbar cartItemsQuantity={cartItemsQuantity} />{" "}
+                <Shop items={data} />
+              </>
+            }
+          />
           <Route
             path="/shop/:id"
-            element={<Details findItem={findItem} addToCart={addToCart} />}
-            render={(routeProps) => (
-              <Details findItem={findItem} addToCart={addToCart} />
-            )}
+            element={
+              <>
+                <Navbar cartItemsQuantity={cartItemsQuantity} />{" "}
+                <Details findItem={findItem} addToCart={addToCart} />
+              </>
+            }
           />
           <Route
             exact
             path="/cart"
             element={
-              <Cart
-                items={cartItems}
-                deleteCartItem={deleteCartItem}
-                changeQuantity={changeQuantity}
-              />
+              <>
+                <Navbar cartItemsQuantity={cartItemsQuantity} />{" "}
+                <Cart
+                  items={cartItems}
+                  deleteCartItem={deleteCartItem}
+                  changeQuantity={changeQuantity}
+                />
+              </>
             }
           />
         </Routes>
