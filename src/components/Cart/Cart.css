@@ -5,6 +5,7 @@
   justify-content: center;
   overflow: auto;
   padding: 30px;
+  height: 75vh;
 }
 .empty-cart-container {
   display: flex;
@@ -17,18 +18,10 @@
   max-width: 1000px;
   min-width: 360px;
 }
-.cart-shoes-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  overflow: auto;
-}
+
 /* Media Queries */
 @media only screen and (max-width: 1000px) {
-  .checkout-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .cart-shoes-container {
+    height: 70vh;
   }
 }
