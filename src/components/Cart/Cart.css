@@ -18,6 +18,7 @@
   align-items: center;
   justify-content: center;
   padding: 50px;
+  height: 75vh;
 }
 .empty-cart-container > img {
   width: 100%;
