@@ -1,21 +1,20 @@
 import "./Details.css";
 import React from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Carousel from "../../Carousel/Carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CarouselItem } from "../../Carousel/Carousel";
-import { faX } from "@fortawesome/free-solid-svg-icons";
+import { faLeftLong } from "@fortawesome/free-solid-svg-icons";
 import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
 function Details({ findItem, addToCart }) {
   const { id } = useParams();
   const item = findItem(id);
   const [modal, setModal] = React.useState(false);
   const [showCompleteOrder, setShowCompleteOrder] = React.useState(false);
-  const { goBack } = useNavigate();
 
   const handleAdd = () => {
     setModal(true);
-    setTimeout(() => setModal(false), 1000);
+    setTimeout(() => setModal(false), 1300);
     setShowCompleteOrder(true);
     addToCart(item);
   };
@@ -35,11 +34,9 @@ function Details({ findItem, addToCart }) {
             <p className="shoe-description">{item.Name}</p>
             <p className="shoe-price">{item.Price}</p>
           </div>
-          <FontAwesomeIcon
-            className="cancel-icon"
-            icon={faX}
-            onClick={goBack}
-          />
+          <Link to="/shop">
+            <FontAwesomeIcon className="left-arrow-icon" icon={faLeftLong} />
+          </Link>
         </div>
         <div className="buttons-container">
           <button className="add-to-cart-btn" onClick={() => handleAdd()}>
