@@ -1,12 +1,14 @@
 import "./Details.css";
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import Carousel from "../../Carousel/Carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CarouselItem } from "../../Carousel/Carousel";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
-function Details({ item, addToCart }) {
+function Details({ findItem, addToCart }) {
+  const { id } = useParams();
+  const item = findItem(id);
   const [modal, setModal] = React.useState(false);
   const [showCompleteOrder, setShowCompleteOrder] = React.useState(false);
   const { goBack } = useNavigate();
