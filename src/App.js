@@ -3,10 +3,10 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import data from "./data";
 import Navbar from "./components/Navbar/Navbar";
 import Shop from "./components/Shop/Shop";
-import Cart from "./components/Cart";
+import Cart from "./components/Cart/Cart";
 import Landing from "./components/Landing/Landing";
 import Details from "./components/Shop/Details/Details";
-
+import Test from "./test";
 function App() {
   const [cartItems, setCartItems] = React.useState([]);
   const addToCart = (newItem) => {
@@ -46,20 +46,22 @@ function App() {
           <Route path="/shop" element={<Shop items={data} />} />
           <Route
             path="/shop/:id"
+            element={<Details findItem={findItem} addToCart={addToCart} />}
             render={(routeProps) => (
-              <Details
-                item={findItem(routeProps.match.params.id)}
-                addToCart={addToCart}
-              />
+              <Details findItem={findItem} addToCart={addToCart} />
             )}
           />
-          <Route exact path="/cart">
-            <Cart
-              items={cartItems}
-              deleteCartItem={deleteCartItem}
-              changeQuantity={changeQuantity}
-            />
-          </Route>
+          <Route
+            exact
+            path="/cart"
+            element={
+              <Cart
+                items={cartItems}
+                deleteCartItem={deleteCartItem}
+                changeQuantity={changeQuantity}
+              />
+            }
+          />
         </Routes>
       </React.Fragment>
     </HashRouter>
