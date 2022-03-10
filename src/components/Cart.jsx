@@ -1,92 +1,35 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import CartItem from "./Cart/Cart/CartItem";
+import Summary from "./Cart/Summary/Summary";
+import emptyCart_Src from "../../Assets/Images/Empty_Cart.gif";
+import { useNavigate } from "react-router-dom";
 
-function Cart({ items, deleteCartItem, changeQty }) {
-  //   const { goBack } = useNavigate();
-  //   const cartItems = items.map((item) => (
-  //     <CartItem
-  //       key={item.id}
-  //       {...item}
-  //       deleteCartItem={deleteCartItem}
-  //       changeQty={changeQty}
-  //     />
-  //   ));
-  //   const cartTotal = items
-  //     .map((item) => item.price * item.qty)
-  //     .reduce((a, c) => a + c, 0)
-  //     .toFixed(2);
-  //   return (
-  //     <div className={styles.root}>
-  //       <h1>MY SHOPPING CART</h1>
-  //       {items.length > 0 ? (
-  //         <div className={styles["cart-container"]}>
-  //           <div className={styles["cart-items"]}>{cartItems}</div>
-  //           <div className={styles["cart-total"]}>
-  //             <button className={styles["go-back-btn"]} onClick={goBack}>
-  //               <BsChevronLeft /> Go Back
-  //             </button>
-  //             <h2 className={styles["total-text"]}>
-  //               <span className={styles["total-span"]}>Total</span> {cartTotal}{" "}
-  //               USD
-  //             </h2>
-  //             <Link to="/coming-soon">
-  //               <button className={styles["black-btn"]}>Continue</button>
-  //             </Link>
-  //           </div>
-  //         </div>
-  //       ) : (
-  //         <div className={styles["empty-cart-container"]}>
-  //           <h2 className={styles["empty-cart-text"]}>- Your cart is empty -</h2>
-  //         </div>
-  //       )}
-  //     </div>
-  //   );
+function Cart({ items, deleteCartItem, changeQuantity }) {
+  const { goBack } = useNavigate();
+  const cartItems = items.map((item) => (
+    <CartItem
+      key={item.id}
+      {...item}
+      deleteCartItem={deleteCartItem}
+      changeQuantity={changeQuantity}
+    />
+  ));
+  const cartLength = items.length;
+  return cartLength > 0 ? (
+    <div className="checkout-container">
+      <div>
+        <h1>My Cart</h1>
+        <div className="checkout-shoes-container">{cartItems}</div>
+      </div>
+      <Summary cartItems={cartItems} />
+      <span className="go-back" onClick={goBack}></span>
+    </div>
+  ) : (
+    <div className="empty-cart-container">
+      <img src={emptyCart_Src} alt="empty cart"></img>
+      <span className="go-back" onClick={goBack}></span>
+    </div>
+  );
 }
 
 export default Cart;
-
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import styles from './CartItem.module.css';
-
-// function CartItem({
-//   id,
-//   itemName,
-//   imageId,
-//   price,
-//   qty,
-//   deleteCartItem,
-//   changeQty,
-// }) {
-//   const handleDelete = () => deleteCartItem(id);
-//   const handleIncrease = () => changeQty(id, 1);
-//   const handleDecrease = () => changeQty(id, -1);
-
-//   return (
-//     <div className={styles.root}>
-//       <img
-//         className={styles['responsive-image']}
-//         src={`https://source.unsplash.com/${imageId}/300x350`}
-//         alt={id}
-//       />
-//       <div className={styles.info}>
-//         <Link to={`/shop/${id}`}>{itemName}</Link>
-//         <p>{price.toFixed(2)} USD</p>
-
-//         <div className={styles['qty-btns']}>
-//           <button onClick={handleDecrease} disabled={qty < 2}>
-//             -
-//           </button>
-//           <span>{qty}</span>
-//           <button onClick={handleIncrease}>+</button>
-//         </div>
-
-//         <button className={styles['delete-btn']} onClick={handleDelete}>
-//           Delete
-//         </button>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default CartItem;

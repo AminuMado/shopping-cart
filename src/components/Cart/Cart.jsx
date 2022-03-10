@@ -1,35 +1,35 @@
-import "./Checkout.css";
-import Card from "./Card/Card";
-import Summary from "./Summary/Summary";
+import React from "react";
+import CartItem from "./Cart/Cart/CartItem";
+import Summary from "./Cart/Summary/Summary";
 import emptyCart_Src from "../../Assets/Images/Empty_Cart.gif";
-function Checkout(props) {
-  const { cartItems, setCartItems } = props;
-  const shoes = cartItems.map((shoe, index) => (
-    <Card
-      shoe={shoe}
-      key={index}
-      cartItems={cartItems}
-      setCartItems={setCartItems}
+import { useNavigate } from "react-router-dom";
+
+function Cart({ items, deleteCartItem, changeQuantity }) {
+  const { goBack } = useNavigate();
+  const cartItems = items.map((item) => (
+    <CartItem
+      key={item.id}
+      {...item}
+      deleteCartItem={deleteCartItem}
+      changeQuantity={changeQuantity}
     />
   ));
-  let renderCart = false;
-
-  renderCart = cartItems.length > 0 ? true : false;
-  return (
-    (!renderCart && (
-      <div className="empty-cart-container">
-        <img src={emptyCart_Src} alt="empty cart"></img>
+  const cartLength = items.length;
+  return cartLength > 0 ? (
+    <div className="checkout-container">
+      <div>
+        <h1>My Cart</h1>
+        <div className="checkout-shoes-container">{cartItems}</div>
       </div>
-    )) ||
-    (renderCart && (
-      <div className="checkout-container">
-        <div>
-          <h1>My Cart</h1>
-          <div className="checkout-shoes-container">{shoes}</div>
-        </div>
-        <Summary cartItems={cartItems} />
-      </div>
-    ))
+      <Summary cartItems={cartItems} />
+      <span className="go-back" onClick={goBack}></span>
+    </div>
+  ) : (
+    <div className="empty-cart-container">
+      <img src={emptyCart_Src} alt="empty cart"></img>
+      <span className="go-back" onClick={goBack}></span>
+    </div>
   );
 }
-export default Checkout;
+
+export default Cart;
