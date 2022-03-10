@@ -23,17 +23,18 @@
 }
 .cart-item-quantity {
   margin: 5px;
+  position: relative;
 }
 .quantity-btns-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   position: absolute;
-  top: 80%;
+  top: -3px;
   left: 45%;
+  gap: 10px;
 }
 
 .quantity-btns-container button {
@@ -48,6 +49,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+.quantity-btns-container button:active {
+  transform: scale(1.1);
 }
 .cart-item-container > img {
   max-width: 270px;
