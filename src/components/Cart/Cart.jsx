@@ -17,7 +17,7 @@ function Cart({ items, deleteCartItem, changeQuantity }) {
     <div className="checkout-container">
       <div>
         <h1>My Cart</h1>
-        <div className="checkout-shoes-container">{cartItems}</div>
+        <div className="cart-shoes-container">{cartItems}</div>
       </div>
       <Summary cartItems={cartItems} />
     </div>
