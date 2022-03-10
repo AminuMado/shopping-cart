@@ -22,7 +22,15 @@ function CartItem({
         <Link to={`/shop/${id}`}>
           <h3 className="cart-item-name">{Name}</h3>{" "}
         </Link>
-        <p className="cart-item-quantity">{`Quantity: ${Quantity}`}</p>
+        <p className="cart-item-quantity">
+          {`Quantity: ${Quantity}`}
+          <div className="quantity-btns-container">
+            <button onClick={handleDecrease} disabled={Quantity < 2}>
+              -
+            </button>
+            <button onClick={handleIncrease}>+</button>
+          </div>
+        </p>
         <p className="cart-item-price">{`Price: ${Price.toFixed(
           2
         )} VAT included`}</p>
@@ -32,12 +40,6 @@ function CartItem({
         icon={faTrashCan}
         onClick={() => handleDelete(id)}
       />
-      <div className="quantity-btns-container">
-        <button onClick={handleDecrease} disabled={Quantity < 2}>
-          -
-        </button>
-        <button onClick={handleIncrease}>+</button>
-      </div>
     </div>
   );
 }
