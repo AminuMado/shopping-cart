@@ -120,7 +120,7 @@ const Shoe = [
     ],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -129,7 +129,7 @@ const Shoe = [
     Photos: [Barons_1_Src, Barons_2_Src, Barons_3_Src, Barons_4_Src],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -143,7 +143,7 @@ const Shoe = [
     ],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -157,7 +157,7 @@ const Shoe = [
     ],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -166,7 +166,7 @@ const Shoe = [
     Photos: [Bred_1_Src, Bred_2_Src, Bred_3_Src, Bred_4_Src],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -180,7 +180,7 @@ const Shoe = [
     ],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -194,7 +194,7 @@ const Shoe = [
     ],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -208,7 +208,7 @@ const Shoe = [
     ],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -222,7 +222,7 @@ const Shoe = [
     ],
     Price: 150,
     Favorite: true,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -231,7 +231,7 @@ const Shoe = [
     Photos: [Gym_Red_1_Src, Gym_Red_2_Src, Gym_Red_3_Src, Gym_Red_4_Src],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -245,7 +245,7 @@ const Shoe = [
     ],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -259,7 +259,7 @@ const Shoe = [
     ],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -268,7 +268,7 @@ const Shoe = [
     Photos: [Obsidian_1_Src, Obsidian_2_Src, Obsidian_3_Src, Obsidian_4_Src],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -282,7 +282,7 @@ const Shoe = [
     ],
     Price: 150,
     Favorite: true,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -291,7 +291,7 @@ const Shoe = [
     Photos: [Pollen_1_Src, Pollen_2_Src, Pollen_3_Src, Pollen_4_Src],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -300,7 +300,7 @@ const Shoe = [
     Photos: [RE2PECT_1_Src, RE2PECT_2_Src, RE2PECT_3_Src, RE2PECT_4_Src],
     Price: 150,
     Favorite: true,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -314,7 +314,7 @@ const Shoe = [
     ],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -323,7 +323,7 @@ const Shoe = [
     Photos: [Shadow_1_Src, Shadow_2_Src, Shadow_3_Src, Shadow_4_Src],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -337,7 +337,7 @@ const Shoe = [
     ],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -346,7 +346,7 @@ const Shoe = [
     Photos: [Top_3_1_Src, Top_3_2_Src, Top_3_3_Src, Top_3_4_Src],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -360,7 +360,7 @@ const Shoe = [
     ],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -374,7 +374,7 @@ const Shoe = [
     ],
     Price: 150,
     Favorite: true,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -388,7 +388,7 @@ const Shoe = [
     ],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -402,7 +402,7 @@ const Shoe = [
     ],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -411,7 +411,7 @@ const Shoe = [
     Photos: [Yin_Yang_1_Src, Yin_Yang_2_Src, Yin_Yang_3_Src, Yin_Yang_4_Src],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -425,7 +425,7 @@ const Shoe = [
     ],
     Price: 150,
     Favorite: true,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
   {
@@ -439,7 +439,7 @@ const Shoe = [
     ],
     Price: 150,
     Favorite: false,
-    Quantity: null,
+    Quantity: 1,
     id: nanoid(),
   },
 ];

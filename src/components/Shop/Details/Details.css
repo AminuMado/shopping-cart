@@ -38,7 +38,7 @@
 .details img {
   transform: scale(0.95);
 }
-.cancel-icon {
+.left-arrow-icon {
   position: absolute;
   bottom: 85%;
   color: rgb(163, 159, 159);
@@ -47,7 +47,8 @@
   opacity: 0.3;
   transition: all 0.3s;
 }
-.cancel-icon:hover {
+
+.left-arrow-icon:hover {
   transform: scale(1.4);
   color: black;
   cursor: pointer;
@@ -59,19 +60,22 @@
   justify-content: space-between;
   width: 100%;
 }
-.radio-btn {
-  display: none;
-}
-.size-label {
-  font-size: 20px;
-}
+
 .shoe-information {
   display: flex;
   align-items: baseline;
   justify-content: space-around;
   width: 97%;
 }
-.add-to-cart-btn {
+.buttons-container {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.add-to-cart-btn,
+.complete-order-btn {
   display: block;
   width: 200px;
   height: 40px;
@@ -87,12 +91,14 @@
   transition: all 0.35s;
   background: whitesmoke;
 }
-.add-to-cart-btn:hover {
+.add-to-cart-btn:hover,
+.complete-order-btn:hover {
   color: #fff;
   cursor: pointer;
   background: black;
 }
-.add-to-cart-btn:active {
+.add-to-cart-btn:active,
+.complete-order-btn:active {
   transform: scale(1.1);
 }
 .shoe-name {
@@ -140,5 +146,8 @@
   .shoe-price {
     font-size: 17px;
     color: black;
+  }
+  .buttons-container {
+    gap: 25px;
   }
 }
