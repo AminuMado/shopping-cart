@@ -16,6 +16,14 @@ function Summary({ cartItems }) {
       <button className="checkout-btn">
         <span>CHECKOUT</span>
       </button>
+      <div class="checkout-message-container">
+        <h3>Retro Shop</h3>
+        <span>Thank you for your order!</span>
+        <p>This is actually a Fake Store</p>
+        <Link to="/Landing">
+          <button class="return-button">Return To Shop</button>
+        </Link>
+      </div>
     </div>
   );
 }
