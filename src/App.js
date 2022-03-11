@@ -23,6 +23,9 @@ function App() {
       setCartItems([...cartItems, newItem]);
     }
   };
+  const clearCartItems = () => {
+    setCartItems([]);
+  };
   const changeQuantity = (id, count) =>
     setCartItems(
       cartItems.map((item) =>
@@ -71,6 +74,7 @@ function App() {
                   items={cartItems}
                   deleteCartItem={deleteCartItem}
                   changeQuantity={changeQuantity}
+                  clearCartItems={clearCartItems}
                 />
               </>
             }
