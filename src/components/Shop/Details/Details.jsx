@@ -1,47 +1,28 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Details.css";
-import Carousel from "../../Carousel/Carousel";
-import { CarouselItem } from "../../Carousel/Carousel";
-import { faX } from "@fortawesome/free-solid-svg-icons";
-import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
 import React from "react";
-function Details(props) {
+import { Link, useParams } from "react-router-dom";
+import Carousel from "../../Carousel/Carousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { CarouselItem } from "../../Carousel/Carousel";
+import { faLeftLong } from "@fortawesome/free-solid-svg-icons";
+import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
+function Details({ findItem, addToCart }) {
+  const { id } = useParams();
+  const item = findItem(id);
   const [modal, setModal] = React.useState(false);
-  const { setActiveShoe, activeShoe, cartItems, setCartItems } = props;
-  const photos = activeShoe.Photos.map((photo, index) => (
+  const [showCompleteOrder, setShowCompleteOrder] = React.useState(false);
+
+  const handleAdd = () => {
+    setModal(true);
+    setTimeout(() => setModal(false), 1300);
+    setShowCompleteOrder(true);
+    addToCart(item);
+  };
+  const photos = item.Photos.map((photo, index) => (
     <CarouselItem key={index}>
       <img src={photo} alt="Jordans"></img>
     </CarouselItem>
   ));
-  function addToCart() {
-    //if shoe exists in the cart
-    // increase its quantity
-    // if it doesnt just add it to the cart
-
-    // check if already in cart
-    const alreadyInCart = cartItems
-      .map((shoe) => shoe.id)
-      .includes(activeShoe.id);
-    // if in cart add 1 to qty
-    if (alreadyInCart) {
-      //increase the items quantity figure and max it at 5
-      //increase quantity code here
-      const updatedShoe = cartItems.map((shoe) => {
-        if (shoe.id === activeShoe.id) {
-          return { ...shoe, Quantity: shoe.Quantity + 1 };
-        } else return shoe;
-      });
-      setCartItems(updatedShoe);
-    } else {
-      // if not add complete item
-      // with count added
-      const prevQuantity = activeShoe.Quantity;
-      const newShoe = { ...activeShoe, Quantity: prevQuantity + 1 };
-      setCartItems([...cartItems, newShoe]);
-    }
-    setModal(true);
-    setTimeout(() => setModal(false), 1000);
-  }
 
   return (
     <div className="details-overlay active">
@@ -50,25 +31,26 @@ function Details(props) {
         <div className="info-container">
           <div className="shoe-information">
             <p className="shoe-name">Air Jordan 1s</p>
-            <p className="shoe-description">{activeShoe.Name}</p>
-            <p className="shoe-price">{activeShoe.Price}</p>
+            <p className="shoe-description">{item.Name}</p>
+            <p className="shoe-price">{item.Price}</p>
           </div>
-          <FontAwesomeIcon
-            className="cancel-icon"
-            icon={faX}
-            onClick={() => setActiveShoe(false)}
-          />
+          <Link to="/shop">
+            <FontAwesomeIcon className="left-arrow-icon" icon={faLeftLong} />
+          </Link>
         </div>
-        <button className="add-to-cart-btn" onClick={() => addToCart()}>
-          Add to Cart
-        </button>
+        <div className="buttons-container">
+          <button className="add-to-cart-btn" onClick={() => handleAdd()}>
+            Add to Cart
+          </button>
+          {showCompleteOrder && (
+            <Link to="/cart">
+              <button className="complete-order-btn">Complete Order</button>
+            </Link>
+          )}
+        </div>
         {modal && (
           <div className="pop-up-modal">
-            <FontAwesomeIcon
-              className="check-icon"
-              icon={faCircleCheck}
-              onClick={() => setActiveShoe(false)}
-            />
+            <FontAwesomeIcon className="check-icon" icon={faCircleCheck} />
             <p>Added to Cart</p>
           </div>
         )}
