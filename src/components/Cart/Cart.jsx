@@ -4,7 +4,7 @@ import Summary from "./Summary/Summary";
 import emptyCart_Src from "../../Assets/Images/Empty_Cart.gif";
 import "./Cart.css";
 
-function Cart({ items, deleteCartItem, changeQuantity }) {
+function Cart({ items, deleteCartItem, changeQuantity, clearCartItems }) {
   const cartItems = items.map((item) => (
     <CartItem
       key={item.id}
@@ -18,7 +18,7 @@ function Cart({ items, deleteCartItem, changeQuantity }) {
     <div className="checkout-container">
       <h1>My Cart</h1>
       <div className="cart-shoes-container">{cartItems}</div>
-      <Summary cartItems={items} />
+      <Summary cartItems={items} clearCartItems={clearCartItems} />
     </div>
   ) : (
     <div className="empty-cart-container">
