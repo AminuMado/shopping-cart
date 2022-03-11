@@ -14,7 +14,8 @@
 }
 
 .checkout-btn,
-.go-back-btn {
+.go-back-btn,
+.return-btn {
   display: block;
   width: 200px;
   height: 40px;
@@ -32,13 +33,15 @@
   align-self: center;
 }
 .checkout-btn:hover,
-.go-back-btn:hover {
+.go-back-btn:hover,
+.return-btn:hover {
   color: #fff;
   cursor: pointer;
   background: black;
 }
 .checkout-btn:active,
-.go-back-btn:active {
+.go-back-btn:active,
+.return-btn:active {
   transform: scale(1.1);
 }
 .total {
@@ -47,7 +50,30 @@
   word-spacing: 1rem;
   font-style: normal;
 }
-
+.checkout-message-container {
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 380px;
+  max-width: 80vw;
+  padding: 10px;
+  margin: auto;
+  gap: 10px;
+  background-color: #f5f5f5;
+  color: #1b1b1b;
+  border: 3px solid #1b1b1b;
+}
 @media only screen and (max-width: 700px) {
   .cart-page-summary-container {
     height: 7rem;
