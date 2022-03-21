@@ -15,13 +15,13 @@ From The Odin Project's [curriculum](https://www.theodinproject.com/paths/full-s
 - JS
 - React
 
-### Development & Tools
+## Development & Tools
 
-## Javascript Framework
+### Javascript Framework
 
 - React
 
-## Libraries, extensions and tools
+### Libraries, extensions and tools
 
 - ESLint - A linter tool to standardize code
 - Github Pages - Hosting
@@ -40,10 +40,6 @@ Beyond that, other learning outcomes were:
 
 - Design reusable custom components to be used in multiple places;
 - Further comprehension of state management and state lifting in React;
-
-## Summary
-
-### Credit
 
 ## Author
 
