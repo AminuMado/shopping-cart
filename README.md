@@ -37,8 +37,9 @@ From The Odin Project's [curriculum](https://www.theodinproject.com/paths/full-s
 The main motivation for this work was to design and deploy a multiple page application using `react-router-dom´.
 
 Beyond that, other learning outcomes were:
-Design reusable custom components to be used in multiple places;
-Further comprehension of state management and state lifting in React;
+
+- Design reusable custom components to be used in multiple places;
+- Further comprehension of state management and state lifting in React;
 
 ## Summary
 
