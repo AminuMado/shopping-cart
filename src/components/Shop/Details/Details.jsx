@@ -14,7 +14,7 @@ function Details({ findItem, addToCart }) {
 
   const handleAdd = () => {
     setModal(true);
-    setTimeout(() => setModal(false), 1300);
+    setTimeout(() => setModal(false), 500);
     setShowCompleteOrder(true);
     addToCart(item);
   };
