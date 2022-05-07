@@ -1,6 +1,6 @@
 # Retro Js
 
-🔗 **Live preview:** <p><a href="https://aminumado.github.io/shopping_cart/" target="_blank" rel="noopener noreferrer">View the project here!</a> 👀</p>
+🔗 **Live preview:** <p><a href="https://aminumado.github.io/shopping-cart/" target="_blank" rel="noopener noreferrer">View the project here!</a> 👀</p>
 
 <h3>Summary</h3>
 
